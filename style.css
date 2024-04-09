@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: powderblue;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.weather {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    overflow: hidden;
+    background-color: #87CEEB; /* sky blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.cloud {
+    position: absolute;
+    background-image: url('cloud2.png'); /* Cloud image */
+    width: 300px; /* Adjust size according to your image */
+    height: 200px; /* Adjust size according to your image */
+    top: 50%; /* Adjust vertical position */
+    left: -300px; /* Initial horizontal position */
+    animation: moveCloud 30s linear infinite; /* Animation properties */
+}
+@keyframes moveCloud {
+    to {
+        transform: translateX(100vw); /* Move cloud horizontally */
+    }
+}
