@@ -42,9 +42,13 @@ button:hover {
     top: 50%; /* Adjust vertical position */
     left: -300px; /* Initial horizontal position */
     animation: moveCloud 30s linear infinite; /* Animation properties */
+    
+    animation-fill-mode: forwards;
 }
 @keyframes moveCloud {
     to {
         transform: translateX(100vw); /* Move cloud horizontally */
+        from {left: 0px;}
+         to {left: 300px;}
     }
 }
